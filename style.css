@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&family=Sofia&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+
+}
+.white{
+    color: aliceblue;
+}
+.red{
+    color: red;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+.navbar ul li{
+    margin-left: 20px;
+}
+.navbar ul li a{
+    position: relative;
+    padding: 20px 20px;
+}
+.navbar ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    background-color: red;
+    height: 3px;
+    bottom: 0px;
+    right: 0px;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::before{
+    width: 100%;
+    left: 0;
+}
+ .banner{
+    padding: 180px 100px;
+    background-image: url("3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .banner div h1{
+    font-size: 60px;
+ }
+ .banner div{
+    float: right;
+ }
+
+ /* products */
+ .product{
+    padding: 50px 100px;
+    
+    
+
+}
+.section-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    
+
+}
+.section-heading h1{
+    font-size: 40px;
+    margin: 0;
+}
+.product-main{
+    display: flex;
+    justify-content: space-between;
+}
+.product-item{
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 10PX;
+    margin: 50px 0px;
+    box-shadow: 2px 2px 15px gray;
+}
+.product-item img{
+    border-radius: 10px 10px 0px 0px;
+}
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-box h3{
+    margin: 0;
+}
+.product-inner{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.product-inner h3{
+    margin: 0;
+}
+.flex-box ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.flex-box ul li{
+    margin-left: 5px;
+}
+.flex-box button{
+    background-color: aliceblue;
+    border: 1px solid red;
+    padding: 0px 15px;
+    border-radius: 8px;
+}
+.flex-box button:hover{
+    background-color: brown;
+    color: antiquewhite;
+}
+p{
+    text-align: justify;
+    margin: 10px;
+}

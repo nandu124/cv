@@ -1,0 +1,1 @@
+document.write("welcome to the world of web devlopment");
